@@ -34,10 +34,8 @@ class RunIDCallbackHandler(BaseCallbackHandler):
 # LANGCHAIN_API_KEY="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"
 # LANGCHAIN_PROJECT="pr-extraneous-shopper-77"
 
-API_KEY = 'a3babad21aee482798891f0e56f538f4' #gpt4o
-ENDPOINT = 'https://invite-instance-openai.openai.azure.com/'
-os.environ["AZURE_OPENAI_ENDPOINT"] = ENDPOINT
-os.environ["AZURE_OPENAI_API_KEY"] = API_KEY
+os.environ["AZURE_OPENAI_API_KEY"] = os.getenv('API_KEY')
+os.environ["AZURE_OPENAI_ENDPOINT"] = os.getenv('ENDPOINT')
 
 client = Client()
 
