@@ -1,3 +1,4 @@
+pip==24.2
 accelerate==0.34.2
 aiofiles==23.2.1
 aiohappyeyeballs==2.4.1
@@ -38,7 +39,7 @@ frozenlist==1.4.1
 fsspec==2024.9.0
 google-auth==2.35.0
 googleapis-common-protos==1.65.0
-gradio==5.0.2
+gradio==5.0.1
 gradio_client==1.4.0
 grpcio==1.66.1
 h11==0.14.0
@@ -103,7 +104,7 @@ packaging==24.1
 pandas==2.2.3
 parso==0.8.4
 pexpect==4.9.0
-pillow==10.4.0
+pillow==10.4.02
 platformdirs==4.3.6
 posthog==3.6.6
 prompt_toolkit==3.0.48
