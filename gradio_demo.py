@@ -50,12 +50,6 @@ I am an AI Teaching Assistant built to answer all your questions on ECE120.
 - Inquire about assignment instructions: "What should I do if my program doesn't compile?"
 - Remember, the more specific your question, the better I can assist you!"""
 
-# Load the MiniCPM-Llama3-V-2_5 model
-
-# model = AutoModel.from_pretrained("openbmb/MiniCPM-Llama3-V-2_5", trust_remote_code=True, device_map='cpu')
-# model.eval()
-# tokenizer = AutoTokenizer.from_pretrained("openbmb/MiniCPM-Llama3-V-2_5", trust_remote_code=True)
-
 def build_app():
     try:
         # Session and agent states
