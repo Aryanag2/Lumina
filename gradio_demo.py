@@ -101,7 +101,7 @@ def build_app():
                 with gr.Row():
                     with gr.Column(scale=3):
                         initial_prompt = get_initial_prompt()
-                        chatbot = gr.Chatbot(value=[("Hello!", initial_prompt)], height=6000, min_width=3000, bubble_full_width=False)
+                        chatbot = gr.Chatbot(value=[("Hello!", initial_prompt)], height=600, min_width=300, bubble_full_width=False)
                         with gr.Row():
                             msg = gr.Textbox(placeholder="Insert question here...", scale=4)
                             image_input = gr.Image(type="pil", label="Upload Image (optional)", scale=1)
