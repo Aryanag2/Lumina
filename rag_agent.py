@@ -32,9 +32,6 @@ import pprint
 
 from langchain_community.utilities import SearxSearchWrapper
 
-os.environ["AZURE_OPENAI_ENDPOINT"] = os.getenv('ENDPOINT')
-os.environ["AZURE_OPENAI_API_KEY"] = os.getenv('API_KEY')
-
 # import nest_asyncio
 
 # nest_asyncio.apply()
@@ -59,8 +56,8 @@ def get_tiktoken_length(text):
 
 
 # Set environment variables
-os.environ["AZURE_OPENAI_API_KEY"] = API_KEY
-os.environ["AZURE_OPENAI_ENDPOINT"] = ENDPOINT
+os.environ["AZURE_OPENAI_API_KEY"] = os.getenv('API_KEY')
+os.environ["AZURE_OPENAI_ENDPOINT"] = os.getenv('ENDPOINT')
 
 # Initialize the embedding model
 embedding = AzureOpenAIEmbeddings(
