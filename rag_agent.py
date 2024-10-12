@@ -32,11 +32,8 @@ import pprint
 
 from langchain_community.utilities import SearxSearchWrapper
 
-API_KEY = 'a3babad21aee482798891f0e56f538f4' #gpt4o
-ENDPOINT = 'https://invite-instance-openai.openai.azure.com/'
-
-os.environ["AZURE_OPENAI_ENDPOINT"] = ENDPOINT
-os.environ["AZURE_OPENAI_API_KEY"] = API_KEY
+os.environ["AZURE_OPENAI_ENDPOINT"] = os.getenv('ENDPOINT')
+os.environ["AZURE_OPENAI_API_KEY"] = os.getenv('API_KEY')
 
 # import nest_asyncio
 
