@@ -1,0 +1,10 @@
+venv/
+venv2/
+.env
+__pycache__/chroma_db_textbook_c/chroma.sqlite3
+ai-ta-env/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.so
+chroma_db_textbook_c/chroma.sqlite3
+ai-ta-env/lib/python3.12/site-packages/torch/lib/libtorch_cpu.dylib
+ai-ta-env
+echo "/Users/nittinmurthi/Documents/VS_Code/120-AI-TA/course-logistics-retriever" >> .gitignore
+echo "/Users/nittinmurthi/Documents/VS_Code/120-AI-TA/ai-ta-env" >> .gitignore
